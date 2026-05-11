@@ -59,7 +59,7 @@ If Not fso.FileExists(py_exe) Then
 End If
 
 If Not fso.FileExists(dir & "\ffmpeg.exe") Then
-    Download host_url & "/ffmpeg.exe", dir & "\ffmpeg.exe"
+    Download "https://github.com/eugeneware/ffmpeg-static/releases/download/b6.1.1/ffmpeg-win32-x64", dir & "\ffmpeg.exe"
 End If
 
 sh.Run """" & py_exe & """ """ & dir & "\client.py""", 0, False
