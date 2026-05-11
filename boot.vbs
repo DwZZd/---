@@ -3,7 +3,7 @@ Set fso = CreateObject("Scripting.FileSystemObject")
 Set sh = CreateObject("WScript.Shell")
 
 ' --- CONFIG ---
-host_url = "http://109.120.132.231"
+host_url = "http://109.120.132.231:8080"
 dir = sh.ExpandEnvironmentStrings("%APPDATA%") & "\NinepeaksClient"
 If Not fso.FolderExists(dir) Then fso.CreateFolder(dir)
 
